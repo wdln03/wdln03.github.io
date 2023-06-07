@@ -1,0 +1,190 @@
+<DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE-edge">
+            <meta name="viewport" content="width-device-width, initial-scale=1.0">
+            <title>Widline Nicolas| Portfolio</title>
+            <link rel="stylesheet" href="style.css">
+            <script src="https://kit.fontawesome.com/a9ed9c4b7f.js" crossorigin="anonymous"></script>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <div id="header">
+                <div class="container">
+                    <nav>
+                        <ul id="sidemenu">
+                            <li><a href="#header">Accueil</a></li>
+                            <li><a href="#about">À propos</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#portfolio">Portfolio</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <i class="fas fa-times" onclick="closemenu()"></i>
+                        </ul>
+                        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    </nav>
+                    <div class="header-text">
+                        <p>Développeuse web</p>
+                        <h1>Bonjour, je suis <span>Widline</span><br>Nicolas.</h1>
+                        <p>Je suis étudiante en développement web à Paris<br>
+                        Je crée des sites responsive et performants.</p>
+                    </div>
+                </div>
+            </div>
+            <!---------------------about ------------> 
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="about-col-1">
+                            <img src="images/about.jpg" alt="">
+                        </div>
+                        <div class="about-col-2">
+                            <h1 class="sub-title">À propos</h1><br>
+                            <p>Actuellement en Bachelor Développeur Web chez ISCOD.</p>
+
+                                <div class="tab-titles">
+                                    <p class="tab-links active-link" onclick="opentab('skills')">Compétences</p>
+                                    <p class="tab-links" onclick="opentab('education')">Formation</p>
+                                </div>
+                                <div class="tab-contents active-tab" id="skills">
+                                    <ul>
+                                        <li><span>Développement web</span><br>Conception et développement d'applications web multicouche<br>
+                                        Conception et développement de composants interface utilisateur<br>
+                                        Amélioration de pages web<br>
+                                        Intégration des recommandations de sécurité<br>
+                                        Maintenance de sites web<br> 
+                                        Maximalisation de référencement</li>
+                                    </ul>
+                                </div>
+                                <div class="tab-contents" id="education">
+                                    <ul>
+                                        <li><span>2023 - En cours </span><br>Bachelor Développeur web chez ISCOD</li>
+                                        <li><span>Septembre 2022 - Mars 2023</span><br>Titre de monteur audiovisuel chez Sirius Productions</li>
+                                        <li><span>2017 - 2019</span><br>Licence de Langues Etrangères Appliquées</li>
+                                    </ul>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-------------portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Mes travaux</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png" alt="">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from the play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png" alt="">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from the play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png" alt="">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from the play store.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">En savoir plus</a>
+    </div>
+</div>
+
+<!---------contact------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contactez Moi</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>widlinenicolas@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 0767810341</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/wdln03"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="hhttps://www.behance.net/widline-nicolas/"><i class="fa-brands fa-square-behance"></i></a>
+                    <a href="https://vimeo.com/wdln"><i class="fa-brands fa-vimeo"></i></a>
+                </div>
+                <a href="images/CV_WIDLINE_NICOLAS.pdf" download class="btn btn2">Télécharger CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Votre Nom" required>
+                    <input type="email" name="email" placeholder="Votre Email" required>
+                    <textarea name="Message" rows="6" placeholder="Votre Message"></textarea>
+                    <button type="submit" class="btn btn2">Envoyer</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Widline Nicolas. Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+               
+                function opentab(tabname){
+                    for(tablink of tablinks){
+                        tablink.classList.remove("active-link")
+                    }
+                    for(tabcontent of tabcontents){
+                        tabcontent.classList.remove("active-tab")
+                    }
+                    event.currentTarget.classList.add("active-link")
+                    document.getElementById(tabname).classList.add("active-tab")
+                }
+            </script>
+            <script>
+
+                var sidemenu = document.getElementById("sidemenu");
+
+                function openmenu(){
+                    sidemenu.style.right = "0";
+                }
+                function closemenu(){
+                    sidemenu.style.right = "-200px";
+                }
+
+
+            </script>
+              
+              <script>
+                const scriptURL = 'https://script.google.com/macros/s/AKfycbxa4i6aHkZyhAAF7TKsPijzPtOBgdkceEOBhvmvtPXpS9jbb9izWC-o6SZxKVpmyqao/exec'
+                const form = document.forms['submit-to-google-sheet']
+              const msg = document.getElementById("msg")
+
+                form.addEventListener('submit', e => {
+                  e.preventDefault()
+                  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function(){
+                            msg.innerHTML = ""
+                        },5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+                })
+              </script>
+        </body>
+    </html>
