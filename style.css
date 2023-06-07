@@ -46,6 +46,10 @@ nav ul li a {
     position: relative;
 }
 
+.fas, .fa-solid {
+    color: #fff;
+}
+
 nav ul li a::after {
     content: '';
     width: 0%;
