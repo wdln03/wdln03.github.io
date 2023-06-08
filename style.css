@@ -416,6 +416,13 @@ nav .fas {
         left: 25px;
         cursor: pointer;
     }
+    
+     .fa-solid{
+        font-size: 30px;
+        margin-top: 10px;
+        text-align: left;
+    }
+    
     .sub-title {
         font-size: 40px;
     }
