@@ -206,6 +206,7 @@ nav ul li a:hover::after {
 .layer h3 {
     font-weight: 500;
     margin-bottom: 20px;
+    color: white;
 }
 
 .layer a {
@@ -219,6 +220,10 @@ nav ul li a:hover::after {
     height: 25px;
     border-radius: 50%;
     text-align: center;
+}
+
+.layer a i {
+    color: #551b8b;
 }
 
 .work:hover img {
