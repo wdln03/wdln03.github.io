@@ -333,7 +333,11 @@ form .btn2 {
 nav .fas {
     display: none;
 }
-
+@media only screen and (max-width: 375px){
+    .header-text {
+        margin-top: 40%;
+    }
+}
 @media only screen and (max-width: 600px){
     #header {
         background-image: url(images/background-1\ \(5\)\ \(1\).jpg);
@@ -405,4 +409,14 @@ nav .fas {
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+@media only screen and (max-width: 810px){
+    .header-text {
+        margin-top: 40%;
+    }
+    .header-text {
+        font-size: 50px;
+        margin-top: 20px;
+    }
 }
