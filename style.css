@@ -419,4 +419,7 @@ nav .fas {
         font-size: 50px;
         margin-top: 20px;
     }
+    .about-col-2 {
+        flex-basis: 55%;
+    }
 }
